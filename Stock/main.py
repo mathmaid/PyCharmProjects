@@ -1,3 +1,7 @@
+# import os
+# import sys
+# os.chdir('Stock')
+# sys.path.append(os.getcwd())
 import time
 import random
 
