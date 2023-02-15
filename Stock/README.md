@@ -14,9 +14,10 @@ database_name = '存储股票数据信息的数据库名称'
 需要在数据库中创建表stock_info, newstock_info, stock_fund_flow, history_deal四个表, 具体的字段和创建表的代码可以在DataGripProjects中的Stock文件夹中找到
 
 getStock.py中一共提供了四种方法：
-更新股票数据：updateStock()
-更新新股日历：updateNewStock()
-更新某一股票的资金走向：updateStockFundFlow(stock_id)
-更新某一股票的历史交易：updateStockHistoryDeal(stock_id)
+
+1. 更新股票数据：updateStock()
+2. 更新新股日历：updateNewStock()
+3. 更新某一股票的资金走向：updateStockFundFlow(stock_id)
+4. 更新某一股票的历史交易：updateStockHistoryDeal(stock_id)
 
 main.py是获取所有股票十年历史交易数据的代码

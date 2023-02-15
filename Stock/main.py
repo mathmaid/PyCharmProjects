@@ -7,4 +7,4 @@ if __name__ == '__main__':
     for item in df['dm']:
         print(item)
         updateStockHistoryDeal(item)
-        time.sleep(5)
+        time.sleep(10)
