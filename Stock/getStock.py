@@ -135,17 +135,22 @@ def updateStockHistoryDeal(stock_id):
     url = 'http://api.mairui.club/hsmy/lscj/' + stock_id + '/' + my_license
     response = requests.get(url)
     data_json = json.loads(response.text)
-    df3 = pandas.DataFrame(data_json)
-    df3['dm'] = stock_id
+    try:
+        df3 = pandas.DataFrame(data_json)
+        df3['dm'] = stock_id
     # session.query(HistoryDeal).delete()
     # session.commit()
     # session.close()
-    df3.to_sql('history_deal', con=con_insert, if_exists='append', index=False)
-    print('操作成功')
+        df3.to_sql('history_deal', con=con_insert, if_exists='append', index=False)
+        print('操作成功')
+        return True
+    except:
+        print('操作失败')
+        return False
 
 
 def getStockInfo():
-    sql = 'SELECT * from stock_info'
+    sql = 'SELECT * from stock_info where dm >= 56'
     sql_query = text(sql)
     df = pandas.read_sql(sql_query, con=con_select)
     return df
