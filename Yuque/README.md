@@ -43,3 +43,10 @@ YuqueData是本程序的核心模块，提供五个函数, 分别用以获取不
 
 ## TextConverter
 
+文本转换器，用于删除docs文件夹中markdown文件的frontmatter部分，将Obsidian中的Admonition插件中的高亮块转换为语雀支持的高亮块，删除markdown中的Wiki链接，并在文档末尾添加一个bar内容。
+
+## Upload
+
+用于上传本地内容, 需要在docs文件夹下放入与知识库同名的文件夹，并在其中放入markdown文件，启动即可自动上传至markdown
+
+> :warning: 注意！如果在同知识库下有与文件重名的文档，则会在语雀删除所有与之重名的文档，请谨慎使用！
