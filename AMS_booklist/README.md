@@ -1,0 +1,3 @@
+# AMS_booklist
+
+AMS_booklist项目已经更新，美国数学协会不再加密书籍数据，数据可以直接通过request发起post请求获得。
