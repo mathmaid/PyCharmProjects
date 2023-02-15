@@ -1,6 +1,6 @@
 # AMS_booklist
 
-> [!info]
+> [!INFO]
 > 此版本已无法使用，请移步update_AMS分支使用最新版
 
 AMS官网将数据用动态加密传输到本地
