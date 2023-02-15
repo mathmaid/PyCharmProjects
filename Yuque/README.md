@@ -41,3 +41,5 @@ YuqueData是本程序的核心模块，提供五个函数, 分别用以获取不
 2. Repopath: 知识库的路径名, 可以在知识库设置中修改, 如路径为https://www.yuque.com/mathmaid/math, 则Repopath为math
 3. Docpath：文档的路径名, 可以在文档设置中修改, 如路径为https://www.yuque.com/mathmaid/math/curvature, 则Docpath为curvature
 
+## TextConverter
+
